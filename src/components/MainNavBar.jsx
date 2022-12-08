@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from "../images/boscobros.png"
+import navStyle from "../style/nav.module.css"
 
 const MainNavBar = () => {
   return (
@@ -21,9 +22,10 @@ const MainNavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#pricing">Brands</Nav.Link>
-            <NavDropdown title="Products" id="collasible-nav-dropdown">
+            <Nav.Link className={navStyle.textColor} href="/">Home</Nav.Link>
+            <Nav.Link className={navStyle.textColor} href="#pricing">About Us</Nav.Link>
+            <Nav.Link className={navStyle.textColor} href="#pricing">Brands</Nav.Link>
+            <NavDropdown className={navStyle.textColor} title="Products" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/products/eye-protection">Eye Protection</NavDropdown.Item>
               <NavDropdown.Item href="/products/fall-protection">Fall Protection</NavDropdown.Item>
               <NavDropdown.Item href="/products/hearing-protection">Hearing Protection</NavDropdown.Item>
@@ -38,7 +40,7 @@ const MainNavBar = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="/contact">
+            <Nav.Link className={navStyle.textColor} href="/contact">
               Contact Us
             </Nav.Link>
           </Nav>
