@@ -10,7 +10,7 @@ const HomeBody = () => {
         <h5><b style={{color: "white"}}>Welcome to Bosco Bros. For years, we’ve provided our customers with a wide range of safety and construction supplies, excellent customer service and unbeatable prices. Whatever you’re looking for, our friendly staff is ready to help.</b></h5>
       </div>
       <div className={homeStyle.about}>
-        <h1>About Us</h1>
+        <h1><b>About Us</b></h1>
         <h2>How it Began</h2>
         <h5>
           Our company started out in the early 1900's as A. Migliore Marine Supplies, a ship-chandlers business providing equipment and supplies for riverboat pilots, shipyards and shipping companies all up and down the Mississippi River.  In 1983, the company was purchased from the Migliore family by one of its chief employees, Joseph Bosco.
